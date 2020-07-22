@@ -916,12 +916,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xceC41c85C3EEb19370137e9943a09174dB685Ab7",
-      "transactionHash": "0x99f5592915c67a39074d4bbf92704314ffc54dbe8c729dab2edf67a02df0a6bf"
+      "address": "0xBE2297224b9E8455c64994EcF13757d276424e43",
+      "transactionHash": "0xc6f9b0c373fa0824de934f935e300939afe20131a676318a9394388d7028083d"
     }
   },
   "schemaVersion": "3.2.2",
-  "updatedAt": "2020-07-22T02:12:00.231Z",
+  "updatedAt": "2020-07-22T02:30:58.703Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

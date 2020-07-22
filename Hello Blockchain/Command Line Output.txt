@@ -1,0 +1,108 @@
+C:\Users\atonu\Blockchain\Hello Blockchain>truffle migrate --compile-all --reset --network development
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\Hello.sol
+> Compiling .\contracts\Migrations.sol
+> Artifacts written to C:\Users\atonu\Blockchain\Hello Blockchain\build\contracts
+> Compiled successfully using:
+   - solc: 0.6.11+commit.5ef660b1.Emscripten.clang
+
+
+
+Starting migrations...
+======================
+> Network name:    'development'
+> Network id:      5777
+> Block gas limit: 6721975 (0x6691b7)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0xc6f9b0c373fa0824de934f935e300939afe20131a676318a9394388d7028083d
+   > Blocks: 0            Seconds: 0
+   > contract address:    0xBE2297224b9E8455c64994EcF13757d276424e43
+   > block number:        1
+   > block timestamp:     1595385056
+   > account:             0x33c102924989A0F8673eddf5Cc37FC0650D49589
+   > balance:             99.99671218
+   > gas used:            164391 (0x28227)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00328782 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00328782 ETH
+
+
+2_migrations.js
+===============
+
+   Replacing 'Hello'
+   -----------------
+   > transaction hash:    0x712a16fe211bea0b5632d4befb05205d30e809e97761c5b9574bdc0adc00e122
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x0bb1444c00072d8A93230F64aba000e707E718D6
+   > block number:        3
+   > block timestamp:     1595385057
+   > account:             0x33c102924989A0F8673eddf5Cc37FC0650D49589
+   > balance:             99.9909208
+   > gas used:            247228 (0x3c5bc)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00494456 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00494456 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.00823238 ETH
+
+
+C:\Users\atonu\Blockchain\Hello Blockchain>truffle console --network development
+truffle(development)> Hello.address
+'0x0bb1444c00072d8A93230F64aba000e707E718D6'
+
+truffle(development)> Hello.deployed().then(function(instance) {app = instance;})
+undefined
+truffle(development)> app.getGreeting()
+'Hello Blockchain'
+truffle(development)> app.setGreeting("Hello World")
+{
+  tx: '0xed438b45eb5b103fbb525b9e5e1f261b7f619746abd6d0cfde7e4cd8310f1afc',
+  receipt: {
+    transactionHash: '0xed438b45eb5b103fbb525b9e5e1f261b7f619746abd6d0cfde7e4cd8310f1afc',
+    transactionIndex: 0,
+    blockHash: '0x86a537157eeee72c78e7a5df5551a4f3cc68857692079478aa1e7bcddee53fc7',
+    blockNumber: 5,
+    from: '0x33c102924989a0f8673eddf5cc37fc0650d49589',
+    to: '0x0bb1444c00072d8a93230f64aba000e707e718d6',
+    gasUsed: 29145,
+    cumulativeGasUsed: 29145,
+    contractAddress: null,
+    logs: [],
+    status: true,
+    logsBloom: '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		00000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    rawLogs: []
+  },
+  logs: []
+}
+truffle(development)> app.getGreeting()
+'Hello World'
+truffle(development)>
