@@ -1,5 +1,6 @@
 # Hello Blockchain (CLI Based)
-*Simple Blockchain Implementation to Print Hello Blockchain Using Truffle & Ganache. *
+*Simple Blockchain Implementation to Print Hello Blockchain Using Truffle & Ganache.*
+
 *It is a CLI based project. The CLI output is in [Output](Output) folder*
 
 ### Smart Contract
