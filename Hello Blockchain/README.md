@@ -1,7 +1,7 @@
-# Blockchain
+# Hello Blockchain
 *Simple Blockchain Implementation to Print Hello Blockchain Using Truffle & Ganache*
 
-## Smart Contract
+### Smart Contract
 ```
 // SPDX-License-Identifier: MIT
 
@@ -24,3 +24,11 @@ contract Hello{
   }
 }
 ```
+
+### Ganache Screeshots
+
+*Post deploying the Smart Contract*
+![](Output/deployed.png)
+
+*Post calling Smart Contract Functions*
+![](Output/Ganache_Output.png)
