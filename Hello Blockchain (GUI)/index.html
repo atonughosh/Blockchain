@@ -24,10 +24,10 @@
 
     <script>
       var contract;
-
+      var acc;
       web3 = new Web3('http://127.0.0.1:7545');
 
-      var address = "0x1daD16872D8F189299347eEcB75B347613457af8";
+      var address = "0xF95EEA0da71Ed36211d0B34F2b8c06FEF0c82b09";
 
       var abi = [ { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" }, { "inputs": [], "name": "getGreeting", "outputs":
                 [ { "internalType": "string", "name": "", "type": "string" } ], "stateMutability": "view", "type": "function", "constant": true },
@@ -41,7 +41,24 @@
       function getGreet(){
         contract.methods.getGreeting().call().then(function(greeting){
           $('#greetingArea').html(greeting);
-          console.log(greeting);
+        })
+      }
+
+      function setGreet(){
+        var greetingText;
+
+        greetingText = document.getElementById("greeting").value;
+        if (greetingText === "") {
+          alert("Please enter the Greeting Text");
+          return false;
+        }
+        web3.eth.getAccounts().then(function(accounts){
+          acc = accounts[0];
+          return contract.methods.setGreeting(greetingText).send({from: acc});
+        }).then(function(tx){
+          console.log(tx);
+        }).catch(function(tx){
+          console.log(tx);
         })
       }
 
