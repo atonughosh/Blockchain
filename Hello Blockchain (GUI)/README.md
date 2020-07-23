@@ -1,7 +1,7 @@
-# Hello Blockchain (CLI Based)
+# Hello Blockchain (GUI Based)
 *Simple Blockchain Implementation to Print Hello Blockchain Using Truffle & Ganache.*
 
-*It is a CLI based project. The CLI output is in [Output](Output) folder*
+*It is a GUI based project.*
 
 ### Smart Contract
 ```
@@ -32,5 +32,14 @@ contract Hello{
 *Post deploying the Smart Contract*
 ![](Output/deployed.png)
 
-*Post calling Smart Contract Functions*
-![](Output/Ganache_Output.png)
+*Output with constructor set greeting*
+![](Output/Hello_Blockchain.png)
+
+*Output with setGreeting() set greeting*
+![](Output/Hello_World.png)
+
+*Transactions pre calling Smart Contract Functions*
+![](Output/transactions.png)
+
+*Transactions post calling Smart Contract Functions*
+![](Output/Transactions_1.png)
