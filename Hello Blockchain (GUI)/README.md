@@ -33,13 +33,13 @@ contract Hello{
 ![](Output/deployed.png)
 
 *Output with constructor set greeting*
-![](Output/Hello_Blockchain.png)
+![](Output/Hello_Blockchain.PNG)
 
 *Output with setGreeting() set greeting*
-![](Output/Hello_World.png)
+![](Output/Hello_World.PNG)
 
 *Transactions pre calling Smart Contract Functions*
-![](Output/transactions.png)
+![](Output/transactions.PNG)
 
 *Transactions post calling Smart Contract Functions*
 ![](Output/Transactions_1.png)
